@@ -14,7 +14,7 @@
 }
 
 .homepage-article-content {
-	padding: 30px;
+	padding: 20px;
 }
 
 .homepage-article-date {
@@ -22,6 +22,8 @@
 	color: var(--tertiary-color);
 	font-size: 12px;
 	margin-bottom: 1em;
+	color: black;
+
 }
 
 .homepage-article-title {
@@ -29,7 +31,8 @@
 	color: var(--primary-color);
 	font-size: 16px;
 	margin-bottom: 1em;
-	font-weight: 700;
+	font-weight: bolder;
+	letter-spacing: 1px;
 }
 
 .homepage-article-description {
@@ -37,6 +40,8 @@
 	color: var(--secondary-color);
 	font-size: 12px;
 	line-height: 1.5;
+	letter-spacing: 1px;
+	text-align: justify;
 }
 
 .homepage-article-link {

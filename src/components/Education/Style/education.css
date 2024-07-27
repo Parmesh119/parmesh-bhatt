@@ -1,0 +1,35 @@
+.education-heading {
+    color: rgb(71 85 105);
+	letter-spacing: 2px;
+	font-weight: bolder;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.education-container {
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #001c4a;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: space-around;
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.education-container:hover {
+    box-shadow: 2px 30px 40px 10px rgba(99, 89, 123, 0.4);
+    border: 1px solid #fff;
+}
+
+.education {
+    font-family: __Space_Grotesk_587f35 - 500;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 28px;
+    color: rgb(255, 255, 255);
+}

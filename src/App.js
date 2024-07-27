@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import ReactGA from "react-ga4";
+import { Toaster } from 'react-hot-toast';
 
 import Homepage from "./pages/homepage";
 import About from "./pages/about";
@@ -15,6 +16,19 @@ import "./app.css";
 
 function App() {
 	useEffect(() => {
+		const suppressResizeObserverError = () => {
+			const resizeObserverErr = window.onerror;
+			window.addEventListener('error', (event) => {
+				if (event.message.includes('ResizeObserver loop limit exceeded')) {
+					event.stopImmediatePropagation();
+					return false;
+				}
+			});
+			window.onerror = resizeObserverErr;
+		};
+		
+		suppressResizeObserverError();
+		
 		if (TRACKING_ID !== "") {
 			ReactGA.initialize(TRACKING_ID);
 		}
@@ -31,6 +45,7 @@ function App() {
 				<Route path="/contact" element={<Contact />} />
 				<Route path="*" element={<Notfound />} />
 			</Routes>
+				<Toaster />
 		</div>
 	);
 }

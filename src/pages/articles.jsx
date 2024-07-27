@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 import NavBar from "../components/common/navBar";
@@ -60,11 +61,27 @@ const Articles = () => {
 											date={article().date}
 											title={article().title}
 											description={article().description}
-											link={"/article/" + (index + 1)}
+											link={article().link}
 										/>
 									</div>
 								))}
 							</div>
+							<Link to="https://hashnode.com/@Prmes119" target="_blank" style={{
+								textDecoration: "none"
+							}}><button style={{
+								marginTop: "20px",
+								padding: "15px",
+								marginLeft: "35%",
+								marginRight: "65%",
+								width: "40%",
+								fontWeight: "bolder",
+								fontSize: "16px",
+								color: "#fff",
+								backgroundColor: "#1e90ff",
+								border: "none",
+								borderRadius: "10rem",
+								cursor: "pointer"
+							}}>More Articles</button></Link>
 						</div>
 					</div>
 					<div className="page-footer">

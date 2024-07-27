@@ -1,0 +1,101 @@
+/* Languages.css */
+.languages-container {
+    background-color: #111;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    width: 250px;
+    letter-spacing: 2px;
+    margin: 20px auto;
+    color: rgb(244, 244, 245);
+    text-align: left;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.languages-container:hover {
+    box-shadow: 2px 30px 40px 10px rgba(49, 112, 214, 0.4);
+    border: 1px solid #fff;
+}
+
+.languages-container h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 2px;
+}
+
+.languages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    line-height: 20px;
+    margin-top: 1rem;
+}
+
+.language-btn {
+    background: none;
+    border-radius: 8px;
+    padding: 10px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    line-height: 20px;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.language-btn:hover {
+    color: white;
+}
+
+.language-btn.blue {
+    border: 2px solid #00f;
+    color: rgb(255, 255, 255);
+}
+
+.language-btn.blue:hover {
+    background: rgb(255, 255, 255);
+    color: black;
+}
+
+.first_card_1 > .language-btn.green {
+    border: 2px solid #0f0;
+    color: rgb(255, 255, 255);
+}
+
+.first_card_1 > .language-btn.green:hover {
+    background: rgb(255, 255, 255);
+    color: black;
+    
+}
+
+.language-btn.green-1 {
+    border: 2px solid #0f0;
+    color: rgb(255, 255, 255);
+    width: 50%;
+    
+}
+
+.language-btn.green-1:hover {
+    background: rgb(255, 255, 255);
+    color: black;
+    
+}
+
+.first_card_1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

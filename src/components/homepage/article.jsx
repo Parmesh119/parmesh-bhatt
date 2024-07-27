@@ -17,11 +17,12 @@ const Article = (props) => {
 						|&nbsp;&nbsp;&nbsp;{date}
 					</div>
 					<div className="homepage-article-title">{title}</div>
+					{/* <div className="homepage-article-title">AWS AMI Customization: How to Build Your Own Machine Image</div> */}
 					<div className="homepage-article-description">
-						{description}
+						<h3>{description}</h3>
 					</div>
 					<div className="homepage-article-link">
-						<Link to={link}>
+						<Link to={link} target="_blank">
 							Read article{" "}
 							<FontAwesomeIcon
 								style={{ fontSize: "10px" }}

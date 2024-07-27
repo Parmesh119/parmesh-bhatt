@@ -58,7 +58,9 @@ const NavBar = (props) => {
 								<Link to="/contact">Contact</Link>
 							</li>
 						</ul>
+					<Link to="https://drive.google.com/file/d/132MFGfr0Cen2ggKwNRxlEW8gTHNrCHGD/view?usp=sharing" target="_blank"><button className="resume">Resume</button></Link>
 					</div>
+
 				</nav>
 			</div>
 		</React.Fragment>

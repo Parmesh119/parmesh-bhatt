@@ -12,7 +12,7 @@ const Card = (props) => {
 					<div className="card-icon">
 						<FontAwesomeIcon icon={icon} />
 					</div>
-					<div className="card-title">{title}</div>
+					<div className="card-title"><h3>{title}</h3></div>
 				</div>
 				<div className="card-body">
 					<div className="card-text">{body}</div>

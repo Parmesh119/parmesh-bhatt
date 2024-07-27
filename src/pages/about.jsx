@@ -5,11 +5,15 @@ import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import Socials from "../components/about/socials";
+import Skills from "../components/Skills/Skills";
+import Education from '../components/Education/Education.jsx'
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/about.css";
+import "../components/Skills/style/Card1.css"
+import "../components/Skills/style/Card2.css"
 
 const About = () => {
 	useEffect(() => {
@@ -45,8 +49,11 @@ const About = () => {
 									{INFO.about.title}
 								</div>
 
-								<div className="subtitle about-subtitle">
-									{INFO.about.description}
+								<div className="subtitle about-subtitle" style={{ fontWeight: "bold", letterSpacing: "2px" }}>
+									{INFO.about.description1}
+								</div>
+								<div className="subtitle about-subtitle" style={{ fontWeight: "bold", letterSpacing: "2px" }}>
+									{INFO.about.description2}
 								</div>
 							</div>
 
@@ -70,6 +77,8 @@ const About = () => {
 							<Socials />
 						</div>
 					</div>
+					<Skills />
+					<Education />
 					<div className="page-footer">
 						<Footer />
 					</div>

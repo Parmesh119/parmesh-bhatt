@@ -1,13 +1,18 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClipboardList } from "@fortawesome/free-solid-svg-icons";
+
 import {
 	faTwitter,
 	faGithub,
 	faStackOverflow,
 	faInstagram,
+	faLinkedin,
+	faHashnode,
 } from "@fortawesome/free-brands-svg-icons";
 
 import Logo from "../components/common/logo";
@@ -16,14 +21,17 @@ import NavBar from "../components/common/navBar";
 import Article from "../components/homepage/article";
 import Works from "../components/homepage/works";
 import AllProjects from "../components/projects/allProjects";
+import Card from "../components/common/card";
 
+import myArticles from "../data/articles";
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import myArticles from "../data/articles";
 
-import "./styles/homepage.css";
+import "./styles/homepage.css"
+import "./styles/Button_Article.css"
 
 const Homepage = () => {
+
 	const [stayLogo, setStayLogo] = useState(false);
 	const [logoSize, setLogoSize] = useState(80);
 	const [oldLogoSize, setOldLogoSize] = useState(80);
@@ -84,7 +92,7 @@ const Homepage = () => {
 				<div className="content-wrapper">
 					<div className="homepage-logo-container">
 						<div style={logoStyle}>
-							<Logo width={logoSize} link={false} />
+							<Logo width={logoSize} link={false} borderRadius={100} color={'#D3D3D3'} solid={"solid"} />
 						</div>
 					</div>
 
@@ -95,7 +103,7 @@ const Homepage = () => {
 									{INFO.homepage.title}
 								</div>
 
-								<div className="subtitle homepage-subtitle">
+								<div className="subtitle homepage-subtitle" style={{ textAlign: "justify", letterSpacing: "1px" }}>
 									{INFO.homepage.description}
 								</div>
 							</div>
@@ -115,12 +123,12 @@ const Homepage = () => {
 
 						<div className="homepage-socials">
 							<a
-								href={INFO.socials.twitter}
+								href={INFO.socials.linkedin}
 								target="_blank"
 								rel="noreferrer"
 							>
 								<FontAwesomeIcon
-									icon={faTwitter}
+									icon={faLinkedin}
 									className="homepage-social-icon"
 								/>
 							</a>
@@ -135,15 +143,16 @@ const Homepage = () => {
 								/>
 							</a>
 							<a
-								href={INFO.socials.stackoverflow}
+								href={INFO.socials.twitter}
 								target="_blank"
 								rel="noreferrer"
 							>
 								<FontAwesomeIcon
-									icon={faStackOverflow}
+									icon={faTwitter}
 									className="homepage-social-icon"
 								/>
 							</a>
+
 							<a
 								href={INFO.socials.instagram}
 								target="_blank"
@@ -151,6 +160,16 @@ const Homepage = () => {
 							>
 								<FontAwesomeIcon
 									icon={faInstagram}
+									className="homepage-social-icon"
+								/>
+							</a>
+							<a
+								href={INFO.socials.hashnode}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<FontAwesomeIcon
+									icon={faHashnode}
 									className="homepage-social-icon"
 								/>
 							</a>
@@ -167,7 +186,8 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-projects">
-							<AllProjects />
+							<Card icon={faClipboardList} title="Projects" body={<AllProjects />} />
+
 						</div>
 
 						<div className="homepage-after-title">
@@ -177,15 +197,19 @@ const Homepage = () => {
 										className="homepage-article"
 										key={(index + 1).toString()}
 									>
+
 										<Article
 											key={(index + 1).toString()}
 											date={article().date}
 											title={article().title}
 											description={article().description}
-											link={"/article/" + (index + 1)}
+											link={article().link}
 										/>
 									</div>
 								))}
+								<Link to="https://hashnode.com/@Prmes119" target="_blank" style={{
+									textDecoration: "none"
+								}}><button className="right-aligned-button" >More Articles</button></Link>
 							</div>
 
 							<div className="homepage-works">

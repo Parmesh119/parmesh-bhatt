@@ -14,7 +14,23 @@ import "./styles/socials.css";
 
 const Socials = () => {
 	return (
-		<div className="socials">
+		<div className="socials" >
+			<div className="social">
+				<a
+					href={INFO.socials.linkedin}
+					target="_blank"
+					rel="noreferrer"
+				>
+					<div className="social-icon">
+						<FontAwesomeIcon
+							icon={faLinkedin}
+							className="social-icon"
+						/>
+					</div>
+					<div className="social-text">Follow on LinkedIn</div>
+				</a>
+			</div>
+			
 			<div className="social">
 				<a href={INFO.socials.twitter} target="_blank" rel="noreferrer">
 					<div className="social-icon">
@@ -36,22 +52,6 @@ const Socials = () => {
 						/>
 					</div>
 					<div className="social-text">Follow on GitHub</div>
-				</a>
-			</div>
-
-			<div className="social">
-				<a
-					href={INFO.socials.linkedin}
-					target="_blank"
-					rel="noreferrer"
-				>
-					<div className="social-icon">
-						<FontAwesomeIcon
-							icon={faLinkedin}
-							className="social-icon"
-						/>
-					</div>
-					<div className="social-text">Follow on LinkedIn</div>
 				</a>
 			</div>
 

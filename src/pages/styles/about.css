@@ -69,6 +69,39 @@
 	display: none;
 }
 
+.skill-heading {
+	color: rgb(71 85 105);
+	letter-spacing: 2px;
+	font-weight: bolder;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container-skill {
+	display: grid;
+	grid-template-columns: 200px 200px 300px;
+	justify-content: space-between;
+
+}
+
+@media (max-width: 1260px) {
+	.container-skill {
+		display: grid;
+		grid-template-columns: 200px 400px;
+		justify-content: space-between;
+	
+	}
+}
+
+@media (max-width: 910px) {
+	.container-skill {
+		display: flex;
+		flex-direction: column;
+	}
+	.skill-heading {
+		text-align: center;
+	}
+}
+
 @media (max-width: 1024px) {
 	.about-logo {
 		z-index: 100;
@@ -115,3 +148,4 @@
 		width: 80%;
 	}
 }
+
