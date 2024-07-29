@@ -60,7 +60,8 @@ const NavBar = (props) => {
 							<li className={
 								active === "resume" ? "nav-item active" : "nav-item"
 							}>
-								<Link to="https://drive.google.com/file/d/132MFGfr0Cen2ggKwNRxlEW8gTHNrCHGD/view?usp=sharing" target="_blank" >Resume</Link>
+								<Link to="https://drive.google.com/file/d/132MFGfr0Cen2ggKwNRxlEW8gTHNrCHGD/view?usp=sharing" 
+								target="_blank" >Resume</Link>
 							</li>
 						</ul>
 					</div>
