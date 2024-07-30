@@ -17,6 +17,7 @@
     display: flex;
     flex-direction: row;
     gap: 40px;
+    margin: auto;
 }
 
 .education-container:hover {
@@ -24,7 +25,7 @@
     border: 1px solid #fff;
 }
 
-.education {
+.first {
     font-family: __Space_Grotesk_587f35 - 500;
     letter-spacing: 2px;
     font-weight: bolder;
@@ -32,4 +33,13 @@
     font-size: 15px;
     line-height: 28px;
     color: rgb(255, 255, 255);
+}
+
+@media (max-width: 800px) {
+    .education-container {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
 }

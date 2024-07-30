@@ -6,7 +6,7 @@ import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import Socials from "../components/about/socials";
 import Skills from "../components/Skills/Skills";
-import Education from '../components/Education/Education.jsx'
+import Education1 from '../components/Education/Education.jsx'
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -82,7 +82,7 @@ const About = () => {
 						</div>
 					</div>
 					<Skills />
-					<Education />
+					<Education1 />
 					<div className="page-footer">
 						<Footer />
 					</div>
