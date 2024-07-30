@@ -14,6 +14,7 @@ import SEO from "../data/seo";
 import "./styles/about.css";
 import "../components/Skills/style/Card1.css"
 import "../components/Skills/style/Card2.css"
+import { Link } from "react-router-dom";
 
 const About = () => {
 	useEffect(() => {
@@ -55,11 +56,9 @@ const About = () => {
 								<div className="subtitle about-subtitle" style={{ fontWeight: "bold", letterSpacing: "2px" }}>
 									{INFO.about.description2}
 								</div>
-								<button className="resume_button">Resume <span style={{
+								<Link target="_blank" to="https://drive.google.com/file/d/132MFGfr0Cen2ggKwNRxlEW8gTHNrCHGD/view?usp=drive_link"><button className="resume_button">Resume <span style={{
 									fontSize: "large",
-								}}>🡥</span>
-
-								</button>
+								}}>🡥</span></button></Link>
 							</div>
 
 							<div className="about-left-side">
