@@ -1,21 +1,22 @@
 .right-aligned-button {
-    display: block;
+	display: block;
     margin-left: auto;
-    margin-right: 65px; /* Default margin-right */
+    margin-right: auto; /* Default margin-right */
     margin-top: 20px;
+	font-weight: bolder;
     padding: 15px 25px;
-    font-weight: bolder;
     font-size: 16px;
     color: #fff;
     background-color: #1e90ff;
     border: none;
     border-radius: 10rem;
     cursor: pointer;
-  }
+}
   
   @media (max-width: 600px) {
     .right-aligned-button {
-      margin-right: 20px; /* Apply this style when max-width is 600px */
+      margin-right: auto;
+      margin-left: auto; /* Apply this style when max-width is 600px */
     }
   }
   

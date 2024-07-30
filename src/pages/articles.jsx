@@ -12,6 +12,7 @@ import SEO from "../data/seo";
 import myArticles from "../data/articles";
 
 import "./styles/articles.css";
+import "../../src/pages/styles/Button_Article.css"
 
 const Articles = () => {
 	useEffect(() => {
@@ -68,20 +69,7 @@ const Articles = () => {
 							</div>
 							<Link to="https://hashnode.com/@Prmes119" target="_blank" style={{
 								textDecoration: "none"
-							}}><button style={{
-								marginTop: "20px",
-								padding: "15px",
-								marginLeft: "35%",
-								marginRight: "65%",
-								width: "40%",
-								fontWeight: "bolder",
-								fontSize: "16px",
-								color: "#fff",
-								backgroundColor: "#1e90ff",
-								border: "none",
-								borderRadius: "10rem",
-								cursor: "pointer"
-							}}>More Articles</button></Link>
+							}}><button className="right-aligned-button">More Articles</button></Link>
 						</div>
 					</div>
 					<div className="page-footer">
