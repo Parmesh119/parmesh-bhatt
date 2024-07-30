@@ -80,7 +80,25 @@
 	display: grid;
 	grid-template-columns: 200px 200px 300px;
 	justify-content: space-between;
+}
 
+.resume_button {
+	background-color: black;
+	color: white;
+	padding: 15px 40px;
+	letter-spacing: 2px;
+	font-size: medium;
+	font-weight: bolder;
+	border-radius: 40px;
+	margin-top: 100px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.resume_button:hover {
+	background-color: white;
+	color: black;
+	border: 2px solid #7b73736f;
+	cursor: pointer;
 }
 
 @media (max-width: 1260px) {

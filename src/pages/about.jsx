@@ -55,6 +55,11 @@ const About = () => {
 								<div className="subtitle about-subtitle" style={{ fontWeight: "bold", letterSpacing: "2px" }}>
 									{INFO.about.description2}
 								</div>
+								<button className="resume_button">Resume <span style={{
+									fontSize: "large",
+								}}>🡥</span>
+
+								</button>
 							</div>
 
 							<div className="about-left-side">

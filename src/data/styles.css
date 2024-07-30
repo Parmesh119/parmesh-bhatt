@@ -11,4 +11,5 @@
 	--primary-font: "Heebo", sans-serif;
 	--secondary-font: "Roboto", sans-serif;
 	/* --------------------- */
+	overflow-x: hidden;
 }
