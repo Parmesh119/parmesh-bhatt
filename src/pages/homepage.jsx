@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
@@ -89,6 +89,7 @@ const Homepage = () => {
 
 			<div className="page-content">
 				<NavBar active="home" />
+				
 				<div className="content-wrapper">
 					<div className="homepage-logo-container">
 						<div style={logoStyle}>
@@ -183,6 +184,9 @@ const Homepage = () => {
 									className="homepage-social-icon"
 								/>
 							</a>
+							<NavLink to="https://drive.google.com/file/d/132MFGfr0Cen2ggKwNRxlEW8gTHNrCHGD/view?usp=drive_link" target="_blank"><button className="resume">Resume <span style={{
+									fontSize: "large",
+								}}>🡥</span></button></NavLink>
 						</div>
 
 						<div className="homepage-projects">

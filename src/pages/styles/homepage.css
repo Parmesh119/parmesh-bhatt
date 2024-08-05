@@ -93,6 +93,24 @@
 	padding-top: 30px;
 }
 
+.resume {
+	background-color: black;
+	color: white;
+	padding: 10px 30px;
+	letter-spacing: 2px;
+	border-radius: 30px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: bold;	
+	cursor: pointer;
+	font-size: medium;
+}
+
+.resume:hover {
+	background-color: white;
+	color: black;
+	border: 2px solid #7b73736f;
+}
+
 @media (max-width: 1024px) {
 	.homepage-first-area {
 		flex-direction: column;
